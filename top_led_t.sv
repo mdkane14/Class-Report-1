@@ -28,32 +28,14 @@ module top_led_t();
     logic rst;
     logic en;
     logic cw;
-    logic [N-1:0] in0;
-    logic [N-1:0] in1;  
-    logic [N-1:0] in2;  
-    logic [N-1:0] in3; 
-    logic [N-1:0] in4;  
-    logic [N-1:0] in5;  
-    logic [N-1:0] in6;  
-    logic [N-1:0] in7;  
     //output logic tic,
     
-    top_led DUT(
+    top_sseg DUT(
     .an(an),
     .sseg(sseg),
     .clk(sys_clk_pin),
     .rst(rst),
-    .en(en),
-    .cw(cw),
-    .in0(in0),
-    .in1(in1),  
-    .in2(in2),  
-    .in3(in3), 
-    .in4(in4),  
-    .in5(in5),  
-    .in6(in6),  
-    .in7(in7)  
-    //output logic tic,
+    .en(en)
     );
     
     initial begin
